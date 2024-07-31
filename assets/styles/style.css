@@ -1,0 +1,158 @@
+@import url("../fonts/Montserrat-main/Montserrat.css");
+
+:root {
+  --background-color: #cfdff1;
+  --white: #fff;
+  --black: #000;
+
+  --color-svg: #cfdff1;
+  --hover-color: #3db1ff;
+
+  --padding: 20px;
+  --border-radiu: 20px;
+  --border: rgb(221, 220, 220);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  color: var(--black);
+}
+
+/* ShopCard */
+
+.shop_card {
+  margin: 0 auto;
+  max-width: 1440px;
+  background-color: var(--white);
+  margin-top: 50px;
+  border-radius: var(--border-radiu);
+  height: 100%;
+  padding: var(--padding);
+}
+
+/* header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo_title {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.header-navigate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigate {
+  margin: 10px;
+  width: 64px;
+  padding: 10px;
+  border: rgb(221, 220, 220) 1px solid;
+  border-radius: var(--border-radiu);
+  transition: all 0.2s ease-in-out;
+}
+
+.navigate svg path {
+  fill: var(--color-svg);
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.navigate:hover {
+  background-color: var(--hover-color);
+  border: rgb(221, 220, 220) 1px solid;
+  transition: all 0.2s ease-in-out;
+}
+
+.navigate:hover svg path {
+  fill: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+
+/* card */
+
+.cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: var(--padding);
+  max-width: 350px;
+  border: var(--border) 1px solid;
+  border-radius: var(--border-radiu);
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transition: all 0.5s ease-in-out;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.cards-title {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cards-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: var(--border) 1px solid;
+  border-radius: var(--border-radiu);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+  color: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 650px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    margin: 0 auto;
+  }
+}
