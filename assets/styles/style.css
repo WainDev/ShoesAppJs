@@ -156,3 +156,9 @@ a {
     margin: 0 auto;
   }
 }
+
+@media (max-width: 979px) {
+  .card {
+    margin: 0 auto;
+  }
+}
