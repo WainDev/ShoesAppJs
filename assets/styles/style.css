@@ -160,6 +160,5 @@ a {
 @media (max-width: 979px) {
   .card {
     margin: 0 auto;
-    border: #000;
   }
 }
