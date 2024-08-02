@@ -11,6 +11,8 @@
   --padding: 20px;
   --border-radiu: 20px;
   --border: rgb(221, 220, 220);
+
+  --hover-animate: all 0.5s ease-in-out;
 }
 
 *,
@@ -21,6 +23,10 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+}
+
+html {
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -43,6 +49,7 @@ a {
   max-width: 1440px;
   background-color: var(--white);
   margin-top: 50px;
+  margin-bottom: 50px;
   border-radius: var(--border-radiu);
   height: 100%;
   padding: var(--padding);
@@ -73,23 +80,23 @@ a {
   padding: 10px;
   border: rgb(221, 220, 220) 1px solid;
   border-radius: var(--border-radiu);
-  transition: all 0.2s ease-in-out;
+  transition: var(--hover-animate);
 }
 
 .navigate svg path {
   fill: var(--color-svg);
   border: none;
-  transition: all 0.2s ease-in-out;
+  transition: var(--hover-animate);
 }
 .navigate:hover {
   background-color: var(--hover-color);
   border: rgb(221, 220, 220) 1px solid;
-  transition: all 0.2s ease-in-out;
+  transition: var(--hover-animate);
 }
 
 .navigate:hover svg path {
   fill: var(--white);
-  transition: all 0.2s ease-in-out;
+  transition: var(--hover-animate);
 }
 
 /* card */
@@ -139,14 +146,14 @@ a {
   border: var(--border) 1px solid;
   border-radius: var(--border-radiu);
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: var(--hover-animate);
 }
 
-.button:hover {
+/* .button:hover {
   background-color: var(--hover-color);
   color: var(--white);
   transition: all 0.2s ease-in-out;
-}
+} */
 
 @media (max-width: 650px) {
   .cards {
@@ -160,5 +167,33 @@ a {
 @media (max-width: 979px) {
   .card {
     margin: 0 auto;
+  }
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--hover-color);
+    color: var(--white);
+    transition: var(--hover-animate);
+  }
+
+  .navigate:hover {
+    background-color: var(--hover-color);
+    border: rgb(221, 220, 220) 1px solid;
+    transition: var(--hover-animate);
+  }
+}
+
+@media (hover: none) {
+  .button:active {
+    background-color: var(--hover-color);
+    color: var(--white);
+    transition: var(--hover-animate);
+  }
+
+  .navigate:active {
+    background-color: var(--hover-color);
+    border: rgb(221, 220, 220) 1px solid;
+    transition: var(--hover-animate);
   }
 }
