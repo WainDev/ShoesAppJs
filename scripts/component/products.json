@@ -2,49 +2,49 @@
   {
     "id": "0",
     "Producttitle": "Nike Air Force 1 ‘07",
-    "ProductImage": "../assets/image/NikeAirForce.png",
+    "ProductImage": "./assets/image/NikeAirForce.png",
     "ProductPrice": "12 000 р"
   },
   {
     "id": "1",
     "Producttitle": "Nike Air Force 1 ‘07",
-    "ProductImage": "../assets/image/NikeAirForce.png",
+    "ProductImage": "./assets/image/NikeAirForce.png",
     "ProductPrice": "14 000 р"
   },
   {
     "id": "2",
     "Producttitle": "Nike Air Force 1 ‘07",
-    "ProductImage": "../assets/image/NikeAirForce.png",
+    "ProductImage": "./assets/image/NikeAirForce.png",
     "ProductPrice": "11 000 р"
   },
   {
     "id": "3",
     "Producttitle": "Nike Air Force 1 ‘07",
-    "ProductImage": "../assets/image/NikeAirForce.png",
+    "ProductImage": "./assets/image/NikeAirForce.png",
     "ProductPrice": "15 000 р"
   },
   {
     "id": "4",
     "Producttitle": "Nike Air Force 1 ‘07",
-    "ProductImage": "../assets/image/NikeAirForce.png",
+    "ProductImage": "./assets/image/NikeAirForce.png",
     "ProductPrice": "15 300 р"
   },
   {
     "id": "5",
     "Producttitle": "Nike Air Force 1 ‘07",
-    "ProductImage": "../assets/image/NikeAirForce.png",
+    "ProductImage": "./assets/image/NikeAirForce.png",
     "ProductPrice": "134 343 р"
   },
   {
     "id": "6",
     "Producttitle": "Nike Air Force 1 ‘07",
-    "ProductImage": "../assets/image/NikeAirForce.png",
+    "ProductImage": "./assets/image/NikeAirForce.png",
     "ProductPrice": "2 000 р"
   },
   {
     "id": "7",
     "Producttitle": "Nike Air Force 1 ‘07",
-    "ProductImage": "../assets/image/NikeAirForce.png",
+    "ProductImage": "./assets/image/NikeAirForce.png",
     "ProductPrice": "141 000 р"
   }
 ]
